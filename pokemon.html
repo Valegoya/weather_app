@@ -11,7 +11,24 @@
 </head>
 <body>
     <div class="container">
-        <img scr="{{url_for('static',filename='logo.jpg')}}"class="rounded mx-auto d-block" alt="imagen de pokemon">
+        <img src="{{url_for('static',filename='logo.jpg')}}" class="rounded mx-auto d-block" alt="imagen">
+        <form method="post">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Ingrese el nombre del pokemon" >
+            <button class="btn btn-warning" type="submit" id="button-addon2">Buscar</button>
+          </div>
+        </form>
+        <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/36.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">cute-charm</h5>
+              <p class="card-text">Height</p>
+              <p class="card-text">Weight</p>
+              <a href="#" class="btn btn-primary">CAPTURAR</a>  <a href="#" class="btn btn-primary">DETALLE</a>
+            </div>
+          </div>
+        </div>
     </div>
 </body>
 </html>
