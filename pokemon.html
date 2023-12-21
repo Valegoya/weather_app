@@ -31,7 +31,7 @@
               <p class="card-text">speed:{{pokemon.speed}}</p>
               
               <a href="#" class="btn btn-primary">CAPTURAR</a>  
-              <a href="{{ url_for('detalle',hp = pokemon.hp, attack=pokemon.attack, defence=pokemon.defence, speed = pokemon.speed,photo=pokemon.photo )}}" class="btn btn-primary">DETALLE</a>
+              <a href="{{ url_for('detalle',name = pokemon.name )}}" class="btn btn-primary">DETALLE</a>
             </div>
           </div>
           {% endif%}
